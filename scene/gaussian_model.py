@@ -28,7 +28,7 @@ def time_function(func):
         start_time = time.time()
         value = func(*args, **kwargs)
         end_time = time.time()
-        print(f"Finished {func.__name__!r} in {end_time - start_time:.4f} seconds")
+       # print(f"Finished {func.__name__!r} in {end_time - start_time:.4f} seconds")
         return value
     return wrapper_timer
 
